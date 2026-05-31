@@ -22,6 +22,6 @@ public class StaticBlock {
 // will only run once, when the first obj is create i.e. when the class is loaded for the first time
    static{
     System.out.println("Hello world");
-    b=a*5;
+    b = a * 5;
    }
 }
