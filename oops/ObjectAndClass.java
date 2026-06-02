@@ -41,7 +41,7 @@ class Student{
         this.name = name;
     }
 
-    // Student arpit = new Student(17, "Arpit", 89.7f);
+    // Student venkat = new Student(01, "Venket", 97.30);
     Student(int roll , String name , double mark){
         this.roll = roll;
         this.name=name;
