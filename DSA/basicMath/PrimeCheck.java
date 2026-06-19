@@ -1,23 +1,24 @@
 package CoreJava.DSA.basicMath;
 import java.util.*;
 
-import static java.lang.Math.sqrt;
-
 public class PrimeCheck {
     public static void main(String[] args) {
-        Scanner in=new Scanner(System.in);
-        int n=in.nextInt();
-        int count=0;
-        for(int i=1;i<=sqrt(n);i++){
-            if(n%i==0){
-                count+=1;
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        int count = 0;
+        for(int i=1 ; i*i<=num ; i++){
+            if(num%i==0){
+                count++;
+                if(i != num/i){
+                    count ++;
+                }
             }
         }
-        if(count>1){
-            System.out.println("It is not a prime");
+        if(count==2){
+            System.out.println(num +" is prime");
         }
         else{
-            System.out.println("It is a prime");
+            System.out.println(num +" Is not a prime");
         }
     }
 }
